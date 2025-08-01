@@ -1,0 +1,542 @@
+  
+
+    body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-image: url('jeremy-bishop-G9i_plbfDgk-unsplash.jpg'); /* Change to your actual image path */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Makes it stay during scroll */
+  background-position: center;
+}
+.navbar{
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+.logo{
+    color:orange;
+    font-size: 30px;
+    font-family: Arial;
+    padding-left: 30px;
+    float:right;
+    padding-top: 20px;
+}
+
+.mainu{
+    width: 400px;
+    float:left;
+    height: 70px;
+    
+}
+
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 200px;
+    gap: 0px;
+}
+
+ul li{
+  list-style: none;
+  margin-left: 80px;
+  margin-top: 27px;
+  font-size: 12px;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+    font-family:Arial ;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+
+}
+ul li a:hover{
+    color:orange;
+}
+
+.hero {
+  background: none;
+  color: #ffffff; /* Default text color for the section */
+  padding: 20px;
+  /* Flexbox for vertical and horizontal centering of the content */
+  display: flex;
+  align-items: center; /* Centers content vertically */
+  justify-content: center; /* Centers content horizontally */
+  min-height: 60vh;
+  border-radius: 0.75rem;
+  padding-top:0px;
+}
+
+.hero .container {
+  max-width: 72rem;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 10px;
+  text-align: center; /* Aligns text (including heading and paragraph) to the center */
+  padding-left: 700px;
+  padding-top: 20px;
+  
+}
+
+
+.hero h2 {
+  color: orange; /* Color for "Hello, I'm" is set to Orange */
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 12px;
+  white-space: nowrap; /* Ensures the text stays on a single line */
+}
+.hero h2 span {
+  color:burlywood; /* Yellow for the name "Eyob Wase" */
+}
+.hero p {
+  color: #FFFFFF; /* Color for the paragraph is set to White */
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.5;
+  opacity: 0.9;
+  white-space: nowrap;
+}
+.about {
+
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  min-height: 50vh; 
+  border-radius: 0.75rem; 
+  margin-top: 0px; 
+}
+.about .container {
+  max-width: 45PX; 
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center; 
+  padding: 16px;
+}
+.about h2 {
+  font-size: 16pxl; 
+  font-weight: 700; 
+  color: #fde047; 
+  margin-bottom: 12px; 
+  white-space: nowrap;
+  padding-left: 100px;
+}
+.about img {
+  width: 150px; 
+  height: 150px; 
+  border-radius: 100%; 
+  border: 5px solid #FFA500; 
+  object-fit: cover; 
+  margin: 0 auto 32px auto; 
+  display:block; 
+}
+.about p {
+  color: #FFFFFF; 
+  font-size: 12px; 
+  line-height: 20px;
+  white-space: nowrap; 
+  overflow: visible; 
+  text-overflow: ellipsis; 
+  margin-bottom: 5px;
+  margin-top:1px; 
+  font-family: Arial;
+  padding-left: 300px;
+
+}
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .about h2 {
+    font-size: 32px;
+  }
+  .about p {
+    font-size: 16px;
+  }
+}
+
+.education h2 {
+  color: #FFA500; 
+  font-size: 24px; 
+  font-weight: 700; 
+  line-height: 1px;
+  white-space: nowrap;
+  padding-left: 100px;
+  padding-top: 100px;
+}
+
+.education p {
+  color: #FFFFFF; 
+  font-size: 12px; 
+  font-family: Arial;
+  line-height: 20px;
+  margin-bottom: 16px; 
+  white-space: nowrap;
+  margin-left: 75px;
+}
+
+.education .btn-download {
+  display: inline-block; 
+  background-color: #FFA500; 
+  color: #1a202c; 
+  padding: 0.75rem 1.5rem; 
+  border-radius: 0.5rem;
+  text-decoration: none; 
+  font-weight: 600; 
+  transition: background-color 0.3s ease, transform 0.3s ease; 
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); 
+}
+
+.education .btn-download:hover {
+  background-color: #e09100; 
+  transform: translateY(-2px); 
+}
+
+.education .btn-download:active {
+  transform: translateY(0); 
+}
+.skills {
+  color: #ffffff; 
+  padding: 100px; 
+  display: flex;
+  align-items: center; 
+  justify-content: center;  
+  margin-top: 16px; 
+  
+}
+
+.skills .container {
+  margin-left: 90px;
+  margin-right: 10px;
+  
+  
+}
+
+.skills h2 {
+  color: #FFA500; 
+  font-size: 32px; 
+  font-weight: 700; 
+  line-height: 1.2px;
+  margin-bottom: 0.5px; 
+  white-space: nowrap;
+  padding-top: 5px;
+  padding-left: 100px;
+}
+
+.skills .skill-list {
+  padding-right: 100px; 
+  margin-bottom: 16px; 
+  margin-top: 0.5px;
+  display: flex;
+   float:left;
+    justify-content: center;
+    align-items: center;
+  gap: 0.1px; 
+}
+
+.skills .skill-list li {
+  background-color: #4a5568; 
+  padding:10px;
+  border-radius: 10px; 
+  font-size: 10px;
+  font-weight: 500;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.skills .skill-bar {
+  width: 100%; 
+  max-width: 500px; 
+  margin: auto; 
+  text-align: left; 
+  padding-left: 250px;
+  margin-bottom: 15px;
+
+
+}
+  
+.skills .skill-bar p {
+  color: #ffffff; /* White color for the skill name (e.g., Python, Html) */
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 4px;
+   
+}
+
+.skills .skill-bar .bar {
+  background-color: #4a5568; /* Background color for the empty part of the bar */
+  height: 25px; 
+  border-radius: 0.5rem; 
+  overflow: hidden; 
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3); 
+  
+}
+
+.skills .skill-bar .fill {
+  height: 100%; /* Fill the height of the parent bar */
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Align percentage text to the right */
+  color: #ffffff; /* White color for the percentage text */
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 8px; 
+  transition: width 1s ease-in-out; 
+}
+
+/* Specific colors and widths for each skill bar */
+.skills .skill-bar .fill.python {
+  background-color: #3b82f6; 
+  width: 65%; 
+}
+
+.skills .skill-bar .fill.html {
+  background-color: #fde047; 
+  width: 50%; 
+}
+
+.skills .skill-bar .fill.css {
+  background-color: #10b981; 
+  width: 50%; 
+}
+
+.skills .skill-bar .fill.javascript {
+  background-color: #ef4444; 
+  width: 20%; 
+}
+interests {
+  background-color: #2d3748;
+  color: #ffffff;
+  padding: 4rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40vh;
+  border-radius: 0.75rem;
+  margin-top:32px;
+}
+
+.interests .container {
+  max-width: 72rem;
+  margin: 0 auto;
+  text-align: center;
+  padding:64px;
+}
+
+.interests h2 {
+  color: #FFA500;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom:0px;
+}
+
+.interests p {
+  color: #FFFFFF;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 32px;
+  padding-top:5px ;
+  font-family: Arial;
+  white-space: nowrap;
+  padding-left: 650px;
+}
+
+.projects {
+  background-color:none;
+  color: #ffffff;
+  padding: 32px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  border-radius: 16px;
+  margin-top: 16px;
+  margin-left: 300px;
+}
+.projects .container {
+  max-width: 72rem;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 16px;
+}
+
+.projects h2 {
+  color: #FFA500;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 4px;
+  padding-right: 400px;
+ 
+}
+
+.projects h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  white-space: nowrap;
+  padding-right: 350px;
+}
+
+.projects img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 24px;
+  border: 2px solid #FFA500;
+}
+
+.projects p {
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 16px;
+  line-height: 1.6;
+  width: 600px;
+  text-align: left;
+  margin: 0 auto;
+  white-space: nowrap;
+  padding-right: 300px;
+}
+
+.contact {
+  background-color:none;
+  color: #ffffff;
+  padding: 32px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  border-radius: 12px;
+  margin-top: 10px;
+  margin-left: 250px;
+}
+
+.contact h2 {
+  color: #FFA500;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 6px;
+  white-space: nowrap;
+  margin-left: 0.5px;
+  padding-right: 400px;
+}
+
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100vw; /* Full page width */
+  margin: 0;
+  text-align: left;
+  padding-left: 400px; /* Distance from left */
+  box-sizing: border-box; /* Keep padding inside width */
+}
+
+.contact input[type="text"],
+.contact input[type="email"],
+.contact textarea {
+  width: 100%;
+  padding: 16px 32px 16px 24px; /* More space on left */
+  background-color: #4a5568;
+  color: #ffffff;
+  border: 1px solid #718096;
+  border-radius: 8px;
+  font-size: 12px;
+  outline: none;
+  text-align: left;
+}
+
+.contact input::placeholder,
+.contact textarea::placeholder {
+  color: #a0aec0;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+  border-color: #caa35b;
+  box-shadow: 16px 2px 16px 600px hsl(from color h s l);
+  
+}
+
+.contact button[type="submit"] {
+  width: 100%;
+  padding: 16px;
+  background-color: #FFA500;
+  color: black;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 10px;
+}
+
+.contact button[type="submit"]:hover {
+  background-color: #e09100;
+}
+footer {
+    background-color: none;
+    color: #a0aec0;
+    padding: 32px 16px;
+    text-align: center;
+    border-top: 1px solid #2d3748;
+    margin-left:250px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    
+}
+
+.container p {
+    margin-left: 350px;
+    font-size: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 16px;
+    margin-left: 350px;
+}
+
+.social-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #FFA500;
+}
+
+.social-links .fab {
+    font-size: 20px;
+}
