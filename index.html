@@ -2,52 +2,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Information about Meta & Title of the Web-->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Website</title>
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
- <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eyob Wase | Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header> 
-    <div class="main">
+
+  <!-- ===== HEADER / NAVBAR ===== -->
+  <header>
     <div class="navbar">
-    <div class ="icon">
       <h2 class="logo">Portfolio.</h2>
-       
-    <nav>
-    <div class="mainu">
-    <ul>
-       <li> <a href="#" class="active">Home</a> </li>
-        <li><a href="#">About</a> </li>
-        <li><a href="#">Education</a> </li>
-        <li><a href="#">Expereince</a> </li>
-        <li><a href="#">Skills</a> </li>
-        <li><a href ="#">Interest</a> </li>
-        <li><a href="#">Contact</a> </li>
-    </ul>
-    </nav>
-    <!-- Hero Section-->
-     <section class="hero">
+      <nav>
+        <ul>
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#interests">Interests</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section id="home" class="hero">
     <div class="container">
       <h2>Hello, I'm <span>Eyob Wase</span></h2>
-      <p>A Software Engineering Student and Data Analyist</p>
+      <p>A Software Engineering Student and Data Analyst</p>
     </div>
   </section>
-  <!-- About Section -->
+
+  <!-- ===== ABOUT SECTION ===== -->
   <section id="about" class="about">
     <div class="container">
       <h2>About Me</h2>
-      <img src="Photo eyob.jpg" alt="Photo of Eyob Wase" />
-    
+      <img src="Photo eyob.jpg" alt="Eyob Wase" />
       <p>
-        I'm a passionate Software Engineering student with experience in data analysis using PostgreSQL and Excel. <br>I'm also excited about blockchain projects like Cardano's Project Catalyst and  My goal to contribute to impactful tech solutions</br> 
-    </p>
+        I'm a passionate Software Engineering student with experience in data analysis using PostgreSQL and Excel.
+        I'm also excited about blockchain projects like Cardano's Project Catalyst.
+        My goal is to contribute to impactful tech solutions.
+      </p>
     </div>
   </section>
-  <!-- Education Section -->
+
+  <!-- ===== EDUCATION SECTION ===== -->
   <section id="education" class="education">
     <div class="container">
       <h2>Educational Background</h2>
@@ -57,59 +59,71 @@
       <a class="btn-download" href="EyobaEuropas cv.pdf" download>📄 Download My CV</a>
     </div>
   </section>
-  <!-- Skills Section -->
+
+  <!-- ===== EXPERIENCE SECTION ===== -->
+  <section id="experience" class="experience">
+    <div class="container">
+      <h2>Experience</h2>
+      <p>Experience details will go here (internships, projects, or work experience).</p>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS SECTION ===== -->
   <section id="skills" class="skills">
     <div class="container">
       <h2>Programming Languages</h2>
       <ul class="skill-list">
         <li>Python</li>
-        <li>Html</li>
+        <li>HTML</li>
         <li>CSS</li>
         <li>JavaScript</li>
       </ul>
-      
-    <div class="skill-bar">
+
+      <div class="skill-bar">
         <p>Python</p>
-        <div class="bar"><div class="fill python">6%</div></div>
+        <div class="bar"><div class="fill python">65%</div></div>
       </div>
       <div class="skill-bar">
-        <p>Html</p>
+        <p>HTML</p>
         <div class="bar"><div class="fill html">50%</div></div>
       </div>
       <div class="skill-bar">
         <p>CSS</p>
         <div class="bar"><div class="fill css">50%</div></div>
       </div>
-      <div class="skill-bar"> <!-- This div should NOT be nested -->
+      <div class="skill-bar">
         <p>JavaScript</p>
         <div class="bar"><div class="fill javascript">20%</div></div>
       </div>
+    </div>
   </section>
-  <!-- Interests Section -->
+
+  <!-- ===== INTERESTS SECTION ===== -->
   <section id="interests" class="interests">
     <div class="container">
       <h2>Interests</h2>
       <p>
-        I love keeping up with new web development trends, working on creative projects, and connecting with other developers who share the same passion for technology
+        I love keeping up with new web development trends, working on creative projects, 
+        and connecting with other developers who share the same passion for technology.
       </p>
     </div>
   </section>
-  <!-- Projects Section -->
+
+  <!-- ===== PROJECTS SECTION ===== -->
   <section id="projects" class="projects">
     <div class="container">
       <h2>Projects</h2>
-      <div class="project-list">
-        <div class="project">
-          <h3>CHeng Python Project</h3>
-          <img src="problem using python.png" alt="Photo of solving CHeng problems using python" />
-          <p>
-           This image shows Python code solving a chemical engineering reaction using <br>stoichiometry, kinetics, and scipy.odeint, highlighting programming’s role in real-world process calculations.</br>
+      <div class="project">
+        <h3>CHeng Python Project</h3>
+        <img src="problem using python.png" alt="Solving Chemical Engineering problems with Python" />
+        <p>
+          Python code solving a chemical engineering reaction using stoichiometry, 
+          kinetics, and scipy.odeint, showing programming’s role in real-world calculations.
         </p>
-        </div>
       </div>
     </div>
   </section>
-   <!-- Contact Section -->
+  <!-- ===== CONTACT SECTION ===== -->
   <section id="contact" class="contact">
     <div class="container">
       <h2>Contact Me</h2>
@@ -121,23 +135,18 @@
       </form>
     </div>
   </section>
-  <!-- Footer -->
+
+  <!-- ===== FOOTER ===== -->
   <footer>
     <div class="container">
       <p>&copy; 2025 Eyob Wase. All rights reserved.</p>
       <div class="social-links">
-        <a href="https://github.com/Jobcoder93" target="_blank" rel="noopener">
-          <i class="fab fa-github"></i> GitHub
-        </a>
-        <a href="#" target="_blank" rel="noopener">
-          <i class="fab fa-x-twitter"></i> X (Twitter)
-        </a>
-        <a href="https://linkedin.com/in/Eyob Wase" target="_blank" rel="noopener">
-          <i class="fab fa-linkedin"></i> LinkedIn
-        </a>
+        <a href="https://github.com/Jobcoder93" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+        <a href="#"><i class="fab fa-x-twitter"></i> X (Twitter)</a>
+        <a href="https://linkedin.com/in/Eyob Wase" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
       </div>
     </div>
   </footer>
-  </header>  
+
 </body>
 </html>
